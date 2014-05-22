@@ -6,6 +6,7 @@ $(document).ready(function(){
  	createjs.Sound.registerSound("./sound/sacfait.mp3", "sound");
  	createjs.Sound.registerSound("./sound/Oh putain.mp3", "sound");
  	createjs.Sound.registerSound("./sound/peterwater.mp3", "sound");
+ 	createjs.Sound.registerSound("./sound/chier.mp3", "sound");
 	
 	console.log("coucou");
 	var son = "son"
