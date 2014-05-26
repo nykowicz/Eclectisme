@@ -111,7 +111,7 @@ body{
 center img{
 	padding-top:2%;
 	cursor:pointer;
-	width:15%; 
+	width:10%; 
 }
 .uk-overlay{
 	width:16%;
@@ -120,7 +120,7 @@ center img{
 
 #container{
 	padding:3% 0 0 1%;
-	width:100%;
+	width:80%;
 	margin:0 auto;
 }
 .bloc{
