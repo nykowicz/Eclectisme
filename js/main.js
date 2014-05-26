@@ -11,7 +11,8 @@ $(document).ready(function(){
  	createjs.Sound.registerSound("./sound/coucou.mp3", "sound");
   	createjs.Sound.registerSound("./sound/pelleteuse.mp3", "sound");
   	createjs.Sound.registerSound("./sound/par3.mp3", "sound");
-	
+  	createjs.Sound.registerSound("./sound/chatapoil.mp3", "sound");
+  		
 	console.log("coucou");
 	var son = "son"
 	
