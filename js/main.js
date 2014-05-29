@@ -6,7 +6,19 @@ $(document).ready(function(){
  	createjs.Sound.registerSound("./sound/sacfait.mp3", "sound");
  	createjs.Sound.registerSound("./sound/Oh putain.mp3", "sound");
  	createjs.Sound.registerSound("./sound/peterwater.mp3", "sound");
+<<<<<<< HEAD
 	
+=======
+ 	createjs.Sound.registerSound("./sound/chier.mp3", "sound");
+ 	createjs.Sound.registerSound("./sound/avc.mp3", "sound");
+ 	createjs.Sound.registerSound("./sound/coucou.mp3", "sound");
+  	createjs.Sound.registerSound("./sound/pelleteuse.mp3", "sound");
+  	createjs.Sound.registerSound("./sound/par3.mp3", "sound");
+  	createjs.Sound.registerSound("./sound/chatapoil.mp3", "sound");
+  	createjs.Sound.registerSound("./sound/pimp.mp3", "sound");
+  	createjs.Sound.registerSound("./sound/dentiey.mp3", "sound");
+  		
+>>>>>>> master
 	console.log("coucou");
 	var son = "son"
 	
