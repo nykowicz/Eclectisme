@@ -50,5 +50,14 @@ $(document).ready(function(){
 	}
 	});
 	
+	/*	$(document).keydown(function quelle_touche(evenement)
+   	{
+       var touche = window.event ? evenement.keyCode : evenement.which;
+       if(touche=65){
+       	var instance = createjs.Sound.play("./sound/tkt.mp3");
+       }
+   
+   	});*/
+	
 	
 });
