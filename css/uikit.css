@@ -4789,6 +4789,9 @@ a.uk-thumbnail:focus {
  * 4. Remove the gap between the container and its child element
  */
 .uk-overlay {
+  box-shadow: inset 0px 0px 20px 4px rgba(119, 119, 119, 0.75); 
+  -moz-box-shadow: inset 0px 0px 20px 4px rgba(119, 119, 119, 0.75);
+  -webkit-box-shadow: inset 0px 0px 20px 4px rgba(119, 119, 119, 0.75);
   /* 1 */
   display: inline-block;
   /* 2 */

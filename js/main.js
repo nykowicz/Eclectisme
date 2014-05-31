@@ -30,6 +30,13 @@ $(document).ready(function(){
 			$("#echo p").css({
 				"color":"#e9e9e9",
 			});
+			$("#footer").css({
+				"background-color":"#e9e9e9",
+			});
+			$("center").css({
+				"color":"#60446d",
+			});
+			
 		}else{
 			$("body").css({
 				"background-color":"#e9e9e9"
@@ -37,6 +44,14 @@ $(document).ready(function(){
 			$("#echo p").css({
 				"color":"#60446d",
 			});
+			$("#footer").css({
+				"background-color":"#60446d",
+			});
+			$("center").css({
+				"color":"#e9e9e9",
+			});
+			
+			
 			echo=0;
 		}
 	});
