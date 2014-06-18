@@ -173,7 +173,6 @@ center img{
 .uk-overlay{
 	width:16%;
 	cursor:pointer;
-
 }
 
 
@@ -187,6 +186,19 @@ center img{
 	cursor:pointer;
 }
 
+
+#container img {
+  -webkit-filter: contrast(150%);
+}
+
+.uk-overlay img {
+	-webkit-border-radius: 80px;
+}
+
+.uk-overlay-area{
+	-webkit-border-radius: 80px;
+}
+      
 #footer{
 	margin-top:2%;
 	vertical-align:middle;
