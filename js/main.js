@@ -18,6 +18,7 @@ $(document).ready(function(){
   	createjs.Sound.registerSound("./sound/barry.mp3", "sound",1);
   	createjs.Sound.registerSound("./sound/willy.mp3", "sound",1);
   	createjs.Sound.registerSound("./sound/chope.mp3", "sound",1);
+  	createjs.Sound.registerSound("./sound/vos-gueules.mp3", "sound",1);
   		
 	var son = "son"
 	var echo = 0;
