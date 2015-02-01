@@ -21,7 +21,9 @@ $(document).ready(function(){
   	createjs.Sound.registerSound("./sound/chope.mp3", "sound",1);
    	createjs.Sound.registerSound("./sound/vois1.mp3", "sound",1);
    	createjs.Sound.registerSound("./sound/vois2.mp3", "sound",1);  	
-   	createjs.Sound.registerSound("./sound/coucou.mp3", "sound",1);	
+   	createjs.Sound.registerSound("./sound/coucou.mp3", "sound",1);
+   	createjs.Sound.registerSound("./sound/salopards.mp3", "sound",1);
+   		
 	var son = "son"
 	var echo = 0;
 	
@@ -30,30 +32,38 @@ $(document).ready(function(){
 		if(echo==0){
 			echo=1;
 			$("body").css({
-				"background-color":"#60446d",
+				"background-color":"#000",
 			});
 			$("#echo p").css({
-				"color":"#e9e9e9",
+				"color":"#FFFFFF",
 			});
 			$("#footer").css({
-				"background-color":"#e9e9e9",
+				"background-color":"#FFF",
 			});
 			$("center").css({
-				"color":"#60446d",
+				"color":"#000",
 			});
+			
+			$("#logo").attr({ 
+				"src":"img/logo-1.png",
+			}).fadeIn();
 			
 		}else{
 			$("body").css({
 				"background-color":"#e9e9e9"
 			});
 			$("#echo p").css({
-				"color":"#60446d",
+				"color":"#000000",
 			});
 			$("#footer").css({
-				"background-color":"#60446d",
+				"background-color":"#000",
 			});
 			$("center").css({
 				"color":"#e9e9e9",
+			});
+			
+			$("#logo").attr({ 
+				"src":"img/logo.png",
 			});
 			
 			
