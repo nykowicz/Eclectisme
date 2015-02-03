@@ -23,7 +23,7 @@ $(document).ready(function(){
    	createjs.Sound.registerSound("./sound/vois2.mp3", "sound",1);  	
    	createjs.Sound.registerSound("./sound/coucou.mp3", "sound",1);
    	createjs.Sound.registerSound("./sound/salopards.mp3", "sound",1);
-   		
+   	createjs.Sound.registerSound("./sound/jeffrey.mp3", "sound",1);	
 	var son = "son"
 	var echo = 0;
 	
