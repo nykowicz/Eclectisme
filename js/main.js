@@ -25,8 +25,10 @@ $(document).ready(function(){
    	createjs.Sound.registerSound("./sound/salopards.mp3", "sound",1);
    	createjs.Sound.registerSound("./sound/jeffrey.mp3", "sound",1);	
    	createjs.Sound.registerSound("./sound/gourmette.mp3", "sound",1);	
+   	createjs.Sound.registerSound("./sound/bougetfesses.mp3", "sound",1);	
 	var son = "son"
 	var echo = 0;
+	
 	
 	$(".onoffswitch-label").click(function(){
 		createjs.Sound.stop();
@@ -47,7 +49,7 @@ $(document).ready(function(){
 			
 			$("#logo").attr({ 
 				"src":"img/logo-1.png",
-			}).fadeIn();
+			});
 			
 		}else{
 			$("body").css({

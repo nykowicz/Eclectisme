@@ -335,16 +335,16 @@ center img{
 	}
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
    .uk-overlay{
-		width:24%;
+		width:24m%;
 		cursor:pointer;
 	}
 	
 	#container{
 		width:98%;
 		margin:0 auto;
-		padding-top:3%;
+		padding-top:5%;
 	}
 	
 	center img{
