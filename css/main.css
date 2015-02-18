@@ -169,7 +169,7 @@ p{
 center img{
 	padding-top:2%;
 	cursor:pointer;
-	width:17%; 
+	width:20%; 
 }
 .uk-overlay{
 	width:16%;
@@ -337,7 +337,7 @@ center img{
 
 @media all and (max-width: 1000px) {
    .uk-overlay{
-		width:24m%;
+		width:24%;
 		cursor:pointer;
 	}
 	

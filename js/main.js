@@ -83,6 +83,16 @@ $(document).ready(function(){
 	}
 	});
 	
+	$(".uk-overlay").mouseenter(function(event){
+		console.log("je tourne !!");
+		$(this).animate({  borderSpacing:-360 }, {
+    	step: function(now,fx) {
+      		$(this).css('-webkit-transform','rotate('+now+'deg)'); 
+      		$(this).css('-moz-transform','rotate('+now+'deg)');
+      		$(this).css('transform','rotate('+now+'deg)');
+    	},duration:'slow'},'linear');
+	});
+	
 	/*	$(document).keydown(function quelle_touche(evenement)
    	{
        var touche = window.event ? evenement.keyCode : evenement.which;
