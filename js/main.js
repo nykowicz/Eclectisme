@@ -51,6 +51,10 @@ $(document).ready(function(){
 				"src":"img/logo-1.png",
 			});
 			
+			$(".bloc").css({
+				"border":"2px solid #e9e9e9",
+			});
+			
 		}else{
 			$("body").css({
 				"background-color":"#e9e9e9"
@@ -69,6 +73,9 @@ $(document).ready(function(){
 				"src":"img/logo.png",
 			});
 			
+			$(".bloc").css({
+				"border":"1px solid #000",
+			});
 			
 			echo=0;
 		}
