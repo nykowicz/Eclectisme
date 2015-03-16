@@ -25,11 +25,15 @@ $(document).ready(function(){
    	createjs.Sound.registerSound("./sound/salopards.mp3", "sound",1);
    	createjs.Sound.registerSound("./sound/jeffrey.mp3", "sound",1);	
    	createjs.Sound.registerSound("./sound/gourmette.mp3", "sound",1);	
-   	createjs.Sound.registerSound("./sound/bougetfesses.mp3", "sound",1);	
+   	createjs.Sound.registerSound("./sound/bougetfesses.mp3", "sound",1);
+   	createjs.Sound.registerSound("./sound/ouaimec.mp3", "sound",1);
+   	
 	var son = "son"
 	var echo = 0;
-	
-	
+	var imageVideo;
+	var lienVideo = null;
+	var lienImage;
+		
 	$(".onoffswitch-label").click(function(){
 		createjs.Sound.stop();
 		if(echo==0){
@@ -91,23 +95,36 @@ $(document).ready(function(){
 	});
 	
 	$(".uk-overlay").mouseenter(function(event){
-		console.log("je tourne !!");
+		if($(this).children("img").attr("id") == "new"){
+
+		}else{
 		$(this).animate({  borderSpacing:-360 }, {
     	step: function(now,fx) {
       		$(this).css('-webkit-transform','rotate('+now+'deg)'); 
       		$(this).css('-moz-transform','rotate('+now+'deg)');
       		$(this).css('transform','rotate('+now+'deg)');
     	},duration:'slow'},'linear');
+	}});
+	
+	
+	$("#lien").keyup(function(){
+
+	if($(this).val() !="" && $(this).val() != lienVideo){
+			lienVideo = $(this).val();
+			imageVideo = lienVideo.split("=").pop();
+			console.log();
+			if(imageVideo.length == 11){
+				$(this).parent().children("img").remove();
+				lienImage = "http://i1.ytimg.com/vi/"+imageVideo+"/0.jpg";
+				$("<img class=\"preview\"src=\""+lienImage+"\"/>").insertAfter(this);
+				$("#ownImg").fadeIn().css({"display":"block"});
+			}
+		}
 	});
 	
-	/*	$(document).keydown(function quelle_touche(evenement)
-   	{
-       var touche = window.event ? evenement.keyCode : evenement.which;
-       if(touche=65){
-       	var instance = createjs.Sound.play("./sound/tkt.mp3");
-       }
-   
-   	});*/
-	
+	$("img.lazy").lazyload({
+		threshold : 200,
+		effect : "fadeIn"
+	});	
 	
 });

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/uikit.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,400,600,700' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="js/soundjs-0.5.2.min.js"></script>
+		
+		
+    </head>
+    <body>
+		<center> <img id="logo" src="img/logo.png"/></center>
+		<form method="post" class="form-vertical" action="plusun.php" id="form-sample">
+		<p id="en-tete"> Pour étoffer notre samplothèque, on a besoin de toi ! <br/>Alors balance ton sample et on le mettra en ligne dans la nuit. </p>
+		  <div class="form-group col-xs-4">
+   			 <label for="inputMail">Ton adresse mail</label>
+  			  <input type="email" name="email" class="form-control" id="email" placeholder="Disqu@i.re" required="required">
+		  </div>
+		  <div id="link" class="form-group col-xs-4">
+		  	<label for="inputLien">Le lien</label>
+   			 <input type="text" class="form-control" name="lien" id="lien" placeholder="https://www.youtube.com/watch?v=1z2jalTCUvE" required="required">
+ 		 </div>
+ 		 <div id="ownImg" class="form-group col-xs-4">
+		  	<label for="inputLien">Cette image ne te convient pas ? </label>
+		  	<label for="inputLien">Envoie nous la tienne au format 200x200 </label>
+   			 <input type="file" class="form-control" name="lien" id="lien" placeholder="https://www.youtube.com/watch?v=1z2jalTCUvE">
+ 		 </div>
+		  <div class="form-group col-xs-4">
+    		<label for="inputTime">Emplacement du sample (HH:MM:SS)</label>
+    		<div>
+  			  Début <input type="time" step="1" name="debut" id="exampleInputFile" required="required">
+  			  Fin <input type="time" step="1" name="fin" id="exampleInputFile" required="required">
+  			 </div>		
+ 			 </div>
+ 			 <div id="submitdiv">
+  				<button type="submit" class="btn btn-default">Envoie la sauce !</button>
+  			</div>
+		</form>
+		</div>
+		<center id="footer"> Copyright 2014 - Tout samplement </center>
+
+    </body>
+</html>
