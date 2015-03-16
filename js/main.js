@@ -27,7 +27,9 @@ $(document).ready(function(){
    	createjs.Sound.registerSound("./sound/gourmette.mp3", "sound",1);	
    	createjs.Sound.registerSound("./sound/bougetfesses.mp3", "sound",1);
    	createjs.Sound.registerSound("./sound/ouaimec.mp3", "sound",1);
-   	
+   	createjs.Sound.registerSound("./sound/toutseul.mp3", "sound",1);
+   	createjs.Sound.registerSound("./sound/54.mp3", "sound",1);
+
 	var son = "son"
 	var echo = 0;
 	var imageVideo;
