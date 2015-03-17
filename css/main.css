@@ -194,11 +194,12 @@ center img{
 }
 
 .uk-overlay img {
-	-webkit-border-radius: 100px;
+	
+	border-radius:100px;
 }
 
 .uk-overlay-area{
-	-webkit-border-radius: 100px;
+	border-radius: 100px;
 }
       
 	#footer{
@@ -275,7 +276,7 @@ center img{
 		margin-top:5%;
 		height:200px;
 		width:200px;
-		-webkit-border-radius: 100px;
+		border-radius: 100px;
 	}
 	
 	#form-sample #ownImg{
@@ -408,7 +409,7 @@ center img{
 	}
 	
 	.uk-overlay img {
-		-webkit-border-radius: 120px;
+		border-radius: 120px;
 	}
 }
 
@@ -432,7 +433,7 @@ center img{
 	}
 	
 	.uk-overlay img {
-		-webkit-border-radius: 120px;
+		border-radius: 120px;
 	}
 }
 
