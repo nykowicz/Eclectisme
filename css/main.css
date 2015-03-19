@@ -185,18 +185,41 @@ center img{
 .bloc{
 	width:100%; 
 	cursor:pointer;
-	border:1px solid black;
 }
 
 
-#container img {
-  -webkit-filter: contrast(150%);
+#container div {
+  -webkit-filter: grayscale(60%); 
+  filter: grayscale(60%);
+}
+
+#container div:hover{
+	-webkit-filter: grayscale(0%); 
+ 	filter: grayscale(0%);
+ 	-webkit-filter: contrast(160%);
+ 
 }
 
 .uk-overlay img {
-	
+	 -webkit-filter: contrast(110%);
 	border-radius:100px;
+	border:2px solid black;
 }
+
+#new{
+	border:4px solid black;
+}
+
+#new:hover{
+
+}
+
+#container div:first-child:hover{
+	-webkit-filter: contrast(100%);
+	
+}
+
+
 
 .uk-overlay-area{
 	border-radius: 100px;

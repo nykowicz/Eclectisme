@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+	
  	createjs.Sound.registerSound("./sound/tkt.mp3", "sound",1);
  	createjs.Sound.registerSound("./sound/sacfait.mp3", "sound",1);
  	createjs.Sound.registerSound("./sound/servietsky-petard.mp3", "sound",1);
@@ -57,9 +57,9 @@ $(document).ready(function(){
 				"src":"img/logo-1.png",
 			});
 			
-			$(".bloc").css({
-				"border":"2px solid #e9e9e9",
-			});
+			$(".bloc").css({ 
+				"border":"2px solid white",
+			});				
 			
 		}else{
 			$("body").css({
@@ -79,9 +79,9 @@ $(document).ready(function(){
 				"src":"img/logo.png",
 			});
 			
-			$(".bloc").css({
-				"border":"1px solid #000",
-			});
+			$(".bloc").css({ 
+				"border":"2px solid black",
+			});			
 			
 			echo=0;
 		}
