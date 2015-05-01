@@ -234,16 +234,22 @@ center img{
 	}
 
     #form-sample{
-    	width:65%;
-    	margin:0 auto;
+    	display:none;
+    	background-color:#FFF;
+		padding-top:30px;
+		width:66%;
+    	margin-left:17%;
     	font-size:1.1em;
+		border-radius: 12px;
+		position:absolute;
+		z-index:2;
     }
     
     #form-sample input{
     	line-height:2em;
     }
     
-     #form-sample div{
+    #form-sample div{
      	text-align:center;
     	display:block;
     	margin-bottom:2%;

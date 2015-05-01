@@ -22,10 +22,36 @@
         <script src="js/jquery.lazyload.js"></script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="js/soundjs-0.5.2.min.js"></script>
-		
+		<script src="js/jquery.storageapi.min.js"></script>
     </head>
     <body>
 		<center> <img id="logo" src="img/logo.png"/></center>
+			<form method="post" class="form-vertical" action="plusun.php" id="form-sample">
+		<p id="en-tete"> Pour étoffer notre samplothèque, on a besoin de toi ! <br/>Alors balance ton sample et on le mettra en ligne dans la nuit. </p>
+		  <div class="form-group col-xs-4">
+   			 <label for="inputMail">Ton adresse mail</label>
+  			  <input type="email" name="email" class="form-control" id="email" placeholder="Disqu@i.re" required="required">
+		  </div>
+		  <div id="link" class="form-group col-xs-4">
+		  	<label for="inputLien">Le lien</label>
+   			 <input type="text" class="form-control" name="lien" id="lien" placeholder="https://www.youtube.com/watch?v=1z2jalTCUvE" required="required">
+ 		 </div>
+ 		 <div id="ownImg" class="form-group col-xs-4">
+		  	<label for="inputLien">Cette image ne te convient pas ? </label>
+		  	<label for="inputLien">Envoie nous la tienne au format 200x200 </label>
+   			 <input type="file" class="form-control" name="imgPerso" id="imgPerso">
+ 		 </div>
+		  <div class="form-group col-xs-4">
+    		<label for="inputTime">Emplacement du sample (HH:MM:SS)</label>
+    		<div>
+  			  Début <input type="time" step="1" name="debut" id="exampleInputFile" required="required">
+  			  Fin <input type="time" step="1" name="fin" id="exampleInputFile" required="required">
+  			 </div>		
+ 			 </div>
+ 			 <div id="submitdiv">
+  				<button type="submit" class="btn btn-default">Envoie la sauce !</button>
+  			</div>
+		</form>
 		<div id="echo">
 		<div class="onoffswitch">
     		<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
@@ -37,12 +63,10 @@
 		<p> JOUR/NUIT </p>
 		</div>
         <div id="container">
-        	<a href="./Envoielasauce.html">
         	<div id="first" class="uk-overlay">
 				<img id="new" data-original="img/new.jpg" class="bloc lazy"/>
 				<div class="uk-overlay-area"> <div class="uk-overlay-area-content"></div></div>
 			</div>
-			</a>
         	<div class="uk-overlay">
 				<img id="tkt" data-original="img/tkt.jpg" class="bloc lazy"/>
 				<div class="uk-overlay-area"> <div class="uk-overlay-area-content"><i class="uk-icon-volume-up uk-icon-large"></i></div></div>
@@ -160,6 +184,7 @@
 				<div class="uk-overlay-area"><div class="uk-overlay-area-content"><i class="uk-icon-volume-up uk-icon-large"></i></div></div> 	
 			</div>
 		</div>
+	
 		<center id="footer"> Copyright 2014 - Tout samplement </center>
     </body>
 </html>

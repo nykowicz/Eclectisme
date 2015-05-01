@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	
+	/*  Init de tous les sons */
  	createjs.Sound.registerSound("./sound/tkt.mp3", "sound",1);
  	createjs.Sound.registerSound("./sound/sacfait.mp3", "sound",1);
  	createjs.Sound.registerSound("./sound/servietsky-petard.mp3", "sound",1);
@@ -35,7 +36,10 @@ $(document).ready(function(){
 	var imageVideo;
 	var lienVideo = null;
 	var lienImage;
+	var imgOK = 0;
 		
+		
+	/* Effets CSS du mode JOUR/NUIT */
 	$(".onoffswitch-label").click(function(){
 		createjs.Sound.stop();
 		if(echo==0){
@@ -87,15 +91,21 @@ $(document).ready(function(){
 		}
 	});
 	
+	
+	/* Lancement du son */
 	$(".uk-overlay").click(function(event){
+	
 	son = $(this).children("img").attr("id");
+	if(son !="new"){
 	if(echo==0){
 		var instance = createjs.Sound.play("./sound/"+son+".mp3");
 	}if(echo==1){
 		var instance = createjs.Sound.play("./sound/"+son+".mp3",{interrupt: createjs.Sound.INTERRUPT_ANY, loop:-1});
-	}
+	}}
 	});
 	
+	
+	/* Rotation du disque sur la platine */
 	$(".uk-overlay").mouseenter(function(event){
 		if($(this).children("img").attr("id") == "new"){
 
@@ -109,25 +119,45 @@ $(document).ready(function(){
 	}});
 	
 	
+	/* Pop-up d'ajout d'un sample */
+	$("#first").click(function(event){
+		$("#form-sample").css({
+				"display":"block"
+			});
+		$("body").css({
+				"filter":"blur(5px)"
+			});
+
+	});
+	
+	/* Récupération de l'image du lien Youtube */
 	$("#lien").keyup(function(){
 
 	if($(this).val() !="" && $(this).val() != lienVideo){
 			lienVideo = $(this).val();
 			imageVideo = lienVideo.split("=").pop();
-			console.log();
 			if(imageVideo.length == 11){
 				$(this).parent().children("img").remove();
 				lienImage = "http://i1.ytimg.com/vi/"+imageVideo+"/0.jpg";
 				$("<img class=\"preview\"src=\""+lienImage+"\"/>").insertAfter(this);
 				$("#ownImg").fadeIn().css({"display":"block"});
+				imgOK = 1;
 			}
 		}
 	});
-
 	
+	/* GIF : Bravo pour l'ajout de votre sample */
+	$("#form-sample").submit(function(event){
+		$("#form-sample").css({
+				"display":"block"
+		});
+	});
+		
+	
+	/* Lazy load sur le mur de sample */
 	$("img.lazy").lazyload({
 		threshold : 200,
 		effect : "fadeIn"
-	});	
+	});
 	
 });

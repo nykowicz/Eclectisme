@@ -7,8 +7,9 @@ if(isset($_POST) && isset($_POST['email']) && isset($_POST['lien']) && isset($_P
 		$entete = 'From: '.$_POST['email']."\r\n".
         	'Reply-To: '.$_POST['email']."\r\n".
 		'X-Mailer: PHP/'.phpversion();
-		if (mail($destinataire,$sujet,$message,$entete)){
-			echo 'Message envoyé';
+		if (mail($destinataire,$sujet,$message,$entete)){	
+			header('Location: http://www.samplement.fr');
+ 			exit();
 		} else {
  			echo "Une erreur est survenue lors de l'envoi du formulaire par email";
 		}
